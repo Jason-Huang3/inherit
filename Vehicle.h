@@ -6,6 +6,7 @@
 #define Vehicle_H 
 
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Vehicle {
@@ -17,7 +18,8 @@ class Vehicle {
         int getYear();
         void setYear(int);
         void setManufacturer(string);
-        Vehicle();
+        Vehicle(string, int);
+        void displayInfo();
 };
 
 #endif
