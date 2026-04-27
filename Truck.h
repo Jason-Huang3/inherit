@@ -10,11 +10,11 @@ using namespace std;
 
 class Truck : public Vehicle {
     private:
-        float tow;
+        int tow;
     public:
-        float getTowPower();
-        void setTowPower(float);
-        Truck(string, int, float);
+        int getTowPower();
+        void setTowPower(int);
+        Truck(string, int, int);
         void displayInfo();
 };
 

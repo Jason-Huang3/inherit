@@ -4,23 +4,21 @@
 #include "Vehicle.h"
 #include "Truck.h"
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
-float Truck::getTowPower() {
+int Truck::getTowPower() {
     return tow;
 }
 
-void Truck::setTowPower(float t) {
+void Truck::setTowPower(int t) {
     tow = t;
 }
 
-Truck::Truck(string m, int y, float t) : Vehicle(m, y) {
+Truck::Truck(string m, int y, int t) : Vehicle(m, y) {
     setTowPower(t);
 }
 
 void Truck::displayInfo() {
     Vehicle::displayInfo();
-    cout << fixed << setprecision(2) 
-         << "Towing Capacity: " << getTowPower() << endl;
+    cout << "Towing Capacity: " << getTowPower() << endl;
 }
