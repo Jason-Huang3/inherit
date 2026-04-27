@@ -3,7 +3,6 @@
 // April 26, 2026
 #include "Vehicle.h"
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 string Vehicle::getManufacturer() {

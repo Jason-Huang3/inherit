@@ -4,7 +4,6 @@
 #include "Vehicle.h"
 #include "Car.h"
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int Car::getDoors() {
