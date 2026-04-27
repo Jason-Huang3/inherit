@@ -10,12 +10,12 @@ using namespace std;
 
 class Car : public Vehicle {
     private:
-        int doors;
+        int Door;
     public:
         int getDoors();
         void setDoors(int);
         Car(string, int, int);
-        void DisplayInfo();
+        void displayInfo();
 };
 
 #endif
